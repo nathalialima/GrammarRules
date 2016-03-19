@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Grammar Rules</string>
+    <string name="info">Analise a palavra sorteada e escreva-a corretamente de
+        acordo com as regras gramaticais. Clique no botão abaixo para iniciar!</string>
+</resources>

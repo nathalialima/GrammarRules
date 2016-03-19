@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nls.learnmath.grammarrules.GrammarActivity"
+    android:background="#ECEFF1"
+    android:clickable="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_view_pontuacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pontuação: "
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_view_pontos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_marginTop="16dp"
+                    android:textColor="#6681f9"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_view_tentativas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tentativas restantes: "
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_view_tentativas_restantes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#6681f9"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_view_palavra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Palavra"
+                android:textSize="48sp"
+                android:layout_margin="48dp"
+                android:textAlignment="center"
+                android:textColor="#607D8B" />
+
+            <TextView
+                android:id="@+id/text_view_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20sp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/edit_text_resposta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Resposta"
+                android:layout_margin="16dp"
+                android:textColor="#5C6BC0"
+                />
+
+            <Button
+                android:id="@+id/button_verificar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:text="Verificar"
+                android:onClick="verificaPalavraDigitada"
+                android:background="#B39DDB"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+
+                />
+
+            <Button
+                android:id="@+id/button_proxima_palavra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:text="Próxima"
+                android:onClick="novaPalavra"
+                android:visibility="gone"
+                android:background="#B39DDB"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</ScrollView>
